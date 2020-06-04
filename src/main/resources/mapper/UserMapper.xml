@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.sharon.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.demo.sharon.pojo.User"> <!--命名空间：关联mapper接口-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <!--  column-数据库的字段  property-pojo的字段  解决字段不一样的问题  -->
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="face_image" jdbcType="VARCHAR" property="faceImage" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="fans_counts" jdbcType="INTEGER" property="fansCounts" />
+    <result column="follow_counts" jdbcType="INTEGER" property="followCounts" />
+    <result column="receive_like_counts" jdbcType="INTEGER" property="receiveLikeCounts" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from users
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.demo.sharon.pojo.User">
+    insert into users (id, username, password,
+      face_image, nickname, fans_counts,
+      follow_counts, receive_like_counts)
+    values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+      #{faceImage,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, #{fansCounts,jdbcType=INTEGER},
+      #{followCounts,jdbcType=INTEGER}, #{receiveLikeCounts,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.demo.sharon.pojo.User">
+    update users
+    set username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      face_image = #{faceImage,jdbcType=VARCHAR},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      fans_counts = #{fansCounts,jdbcType=INTEGER},
+      follow_counts = #{followCounts,jdbcType=INTEGER},
+      receive_like_counts = #{receiveLikeCounts,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, username, password, face_image, nickname, fans_counts, follow_counts,
+    receive_like_counts
+    from users
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, username, password, face_image, nickname, fans_counts, follow_counts,
+    receive_like_counts
+    from users
+  </select>
+<!--resultType="" objection to receive ex:com.demo.sharon.pojo.sth-->
+<!--paramaterType="" the only type of received-->
+  <select id="selectByUsername" parameterType="string" resultMap="BaseResultMap">
+    select id, username, password, face_image, nickname, fans_counts, follow_counts,
+    receive_like_counts
+    from users
+    where username = #{username,jdbcType=VARCHAR}
+  </select>
+
+</mapper>
