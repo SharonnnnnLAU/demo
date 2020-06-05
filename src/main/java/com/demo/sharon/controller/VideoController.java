@@ -1,5 +1,6 @@
 package com.demo.sharon.controller;
 
+import com.demo.sharon.pojo.Result;
 import com.demo.sharon.pojo.Video;
 import com.demo.sharon.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +22,13 @@ public class VideoController {
     // videos/getAllVideos
     @RequestMapping("/getAllVideos")
     @ResponseBody
-    public List<Video> getAllVideos(Integer page, Integer limit) {
-        page = (page - 1)*limit;
+    public Result getAllVideos(Integer page, Integer limit) {
         List<Video> videos = videoService.getAllVideos(page,limit);
-        return videos;
+        Integer count = videoService.getCount();
+        Result result = new Result();
+        result.setData(videos);
+        result.setCount(count);
+        return result;
     }
 
 }

@@ -15,4 +15,6 @@ public interface VideoMapper {
     List<Video> selectAll(@Param("page")Integer page, @Param("limit")Integer limit);
 
     int updateByPrimaryKey(Video record);
+
+    Integer getCount();
 }

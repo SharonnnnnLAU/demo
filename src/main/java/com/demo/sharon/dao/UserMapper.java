@@ -1,6 +1,8 @@
 package com.demo.sharon.dao;
 
 import com.demo.sharon.pojo.User;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface UserMapper {
@@ -10,9 +12,11 @@ public interface UserMapper {
 
     User selectByPrimaryKey(String id);
 
-    List<User> selectAll();
+    List<User> selectAll(@Param("page")Integer page, @Param("limit") Integer limit);
 
     int updateByPrimaryKey(User record);
 
     User selectByUsername(String username);
+
+    Integer getCount();
 }

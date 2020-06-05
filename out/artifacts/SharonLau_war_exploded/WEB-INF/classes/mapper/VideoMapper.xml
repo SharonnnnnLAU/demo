@@ -57,4 +57,8 @@
     video_height, cover_path, like_counts, status, create_time
     from videos LIMIT #{page}, #{limit}
   </select>
+  <select id="getCount" resultType="integer">
+    select count(id)
+    from videos
+  </select>
 </mapper>

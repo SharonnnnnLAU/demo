@@ -6,4 +6,7 @@ import java.util.List;
 
 public interface VideoService {
     List<Video> getAllVideos(Integer page, Integer limit);
+
+    Integer getCount();
+
 }

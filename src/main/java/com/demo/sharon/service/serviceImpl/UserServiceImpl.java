@@ -6,6 +6,8 @@ import com.demo.sharon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service    // 表明服务层
 public class UserServiceImpl implements UserService {
 
@@ -29,5 +31,16 @@ public class UserServiceImpl implements UserService {
         } else {
             return "success";
         }
+    }
+
+    public List<User> getAllUsers(Integer page, Integer limit) {
+        page = (page - 1) * limit;
+        List<User> users = userMapper.selectAll(page, limit);
+        return users;
+    }
+
+    public Integer getCount() {
+        Integer count = userMapper.getCount();
+        return count;
     }
 }

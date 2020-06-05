@@ -7,4 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/home")    // 请求地址路径映射
 public class HomeController {
 
+
+    @RequestMapping("/index")
+    public String index() {
+        return "index";
+    }
 }

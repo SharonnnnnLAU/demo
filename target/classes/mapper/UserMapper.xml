@@ -41,10 +41,10 @@
     from users
     where id = #{id,jdbcType=VARCHAR}
   </select>
-  <select id="selectAll" resultMap="BaseResultMap">
+  <select id="selectAll" parameterType="integer" resultMap="BaseResultMap">
     select id, username, password, face_image, nickname, fans_counts, follow_counts,
     receive_like_counts
-    from users
+    from users LIMIT #{page}, #{limit}
   </select>
 <!--resultType="" objection to receive ex:com.demo.sharon.pojo.sth-->
 <!--paramaterType="" the only type of received-->
@@ -54,5 +54,8 @@
     from users
     where username = #{username,jdbcType=VARCHAR}
   </select>
-
+  <select id="getCount" resultType="integer">
+    select count(id)
+    from users
+  </select>
 </mapper>

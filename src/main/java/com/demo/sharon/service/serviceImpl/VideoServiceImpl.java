@@ -15,7 +15,13 @@ public class VideoServiceImpl implements VideoService {
 
 //    @Override
     public List<Video> getAllVideos(Integer page, Integer limit){
+        page = (page-1) * limit;
         List<Video> videos = videoMapper.selectAll(page, limit);
         return videos;
+    }
+
+    public Integer getCount() {
+        Integer count = videoMapper.getCount();
+        return count;
     }
 }
