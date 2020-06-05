@@ -31,4 +31,25 @@ public class VideoController {
         return result;
     }
 
+    @RequestMapping("/del")
+    @ResponseBody
+    public Result del(String id) {
+        Result result = videoService.del(id);
+        return result;
+    }
+
+    @ResponseBody
+    @RequestMapping("/delete")
+    public Result delete(String[] ids) {
+        // 1st让事务回滚的方式 在controller层捕获异常
+        try {
+            Result result = videoService.delete(ids);
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            Result result = new Result();
+            result.setMsg("u try it so fast, plz try it latter...");
+            return result;
+        }
+    }
 }
