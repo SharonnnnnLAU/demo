@@ -6,9 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37262033-84a3-4650-9a93-32c16a8a5b93" name="Default Changelist" comment="">
+    <list default="true" id="37262033-84a3-4650-9a93-32c16a8a5b93" name="Default Changelist" comment="video data visualization Correction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+            <state relative-caret-position="229">
+              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -101,6 +100,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -319,6 +321,15 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SharonLau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -330,7 +341,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591336577788" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591338643717" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -338,7 +349,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40689656" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -491,7 +502,7 @@
       <workItem from="1591237912930" duration="718000" />
       <workItem from="1591239112078" duration="13976000" />
       <workItem from="1591268321213" duration="1084000" />
-      <workItem from="1591319985976" duration="12007000" />
+      <workItem from="1591319985976" duration="14153000" />
     </task>
     <task id="LOCAL-00001" summary="分页1.0">
       <created>1591241974460</created>
@@ -521,11 +532,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591334936041</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="video data visualization Correction">
+      <created>1591336597263</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591336597263</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67791000" />
+    <option name="totallyTimeSpent" value="69937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,7 +556,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1861" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19766796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -550,19 +567,19 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.83675736" visible="true" weight="0.36382535" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8056635" visible="true" weight="0.36382535" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7251527" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49972236" weight="0.32952183" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4991671" weight="0.22972973" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49861187" weight="0.32952183" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.7606885" weight="0.32328483" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.16324264" side_tool="true" visible="true" weight="0.36382535" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.19433647" side_tool="true" visible="true" weight="0.36382535" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.8434203" weight="0.3087318" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49972236" weight="0.32848233" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4991671" weight="0.32848233" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Spring" order="14" weight="0.32917964" />
+      <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.49972236" weight="0.32848233" />
       <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.4991671" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -883,8 +900,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+        <state relative-caret-position="229">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
         </state>
       </provider>
     </entry>
