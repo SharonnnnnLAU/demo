@@ -1,25 +1,11 @@
-function clickToPaly(path) {
-    // console.log(path)
-    var s = '<video src="../' + path + '" width="100%", height="100%", controls="controls"> </video>'
-    layui.use(['layer'], function () {
-        var layer = layui.layer
-        layer.open({
-            type: 1,
-            title: "预览",
-            area: ['57%', '60%'],
-            content: s
-        })
-    })
-}
-
 layui.use(['table'], function () {
     var table = layui.table
     $ = layui.$;
     // 执行一个table实例
     table.render({
-        elem: '#video'
+        elem: '#user'
         , height: 600
-        , url: 'http://localhost:8080/demo/videos/getAllVideos' //数据接口
+        , url: 'http://localhost:8080/demo/users/getAllUsers' //数据接口
         , title: '视频表'
         , page: true //开启分页
         , toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
@@ -27,43 +13,18 @@ layui.use(['table'], function () {
             [ //表头
                 {type: 'checkbox', fixed: 'left'}
                 , {field: 'id', title: 'ID', sort: true, fixed: 'left'}
-                , {field: 'userId', title: '发布者'}
-                , {field: 'videoDesc', title: '视频描述'}
-                , {
-                field: 'videoPath', title: '播放'
-                    , templet: function (d) {
-                        var path = d.videoPath;
-                        return "<button class='layui-btn layui-btn-radius layui-btn-warm layui-btn-sm' onclick='clickToPaly(\"" + path + "\")'>点击播放</button>";
-                    }
-                }
-                , {field: 'videoSeconds', title: '时长', sort: true}
-                , {field: 'coverPath', title: '封面图',
-                    templet: function (d) {
-                        var path = d.coverPath;
-                        return "<img src=../" + path + " style='height: 28px, width=100% ' />"
-                    }
-                }
-                , {field: 'likeCounts', title: '点赞次数'}
-                , {field: 'status', title: '状态',
-                    templet: function (d) {
-                        if (d.status == "0") {
-                            return "异常";
-                        } else if (d.status == "1") {
-                            return "正常"
-                        }
-                    }
-                }
-                , {field: 'createTime', title: '创建时间', width: 135, sort: true, totalRow: true,
-                    templet: function (d) {
-                        var date =  new Date(d.createTime)
-                        date = layui.util.toDateString(date, 'yyyy/mm/dd hh:mm')
-                        return date
-                    }
-                }
-                , {field: 'tool', fixed: 'right', title: '', width: 165, align: 'center', toolbar: '#barDemo'}
+                , {field: 'username', title: '用户名'}
+                , {field: 'faceImage', title: '头像', sort: true, totalRow: true}
+                , {filed: 'nickname', title: '昵称', sort: true}
+                , {field: 'fanCounts', title: '粉丝人数', sort: true, totalRow: true}
+                , {field: 'followCounts', title: '关注人数'}
+                , {field: 'receiveLikeCounts', title: '收获点赞数'}
+                , {field: '', fixed: 'right', title: '', width: 165, align: 'center', toolbar: '#barDemo'}
             ]
         ]
     });
+
+
 
     table.on('tool(videotest)', function (obj) { //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
         var data = obj.data //获得当前行数据
@@ -71,11 +32,12 @@ layui.use(['table'], function () {
         if (layEvent === 'detail') {
             layer.msg('查看操作');
         } else if (layEvent === 'del') {
+            // console.log(data.id)
             layer.confirm('真的删除行么', function (index) {
                 //向服务端发送删除指令
                 $.ajax({
                     type: "GET"
-                    , url: "http://localhost:8080/demo/videos/del?id=" + data.id
+                    , url: "http://localhost:8080/demo/users/del?id=" + data.id
                     , dataType: "json"   // 规定后台返回数据类型
                     , success: function (res) {
                         // 请求成功后的回调函数
@@ -123,24 +85,24 @@ layui.use(['table'], function () {
                     layer.confirm('真的删除吗', function (index) {
                         $.ajax({
                             type: "POST"
-                            , url: "http://localhost:8080/demo/videos/delete"
+                            , url: "http://localhost:8080/demo/users/delete"
                             , dataType: "json"
                             , data: {
                                 "ids": arry
                             }
                             , traditional: true
                             , success: function (res) {
-                                // console.log("in func")
+                                console.log("in func")
                                 if (res.code == 0) {
                                     // obj.del()
                                     window.location.href = window.location.href;
                                 } else {
                                     layer.msg(res.msg)
-                                    // console.log("in else")
+                                    console.log("in else")
                                 }
                             }
                             , error: function () {
-                                // console.log("in error")
+                                console.log("in error")
                                 // console.log(res.code)
                             } // 请求失败回调函数
                         })
@@ -150,5 +112,5 @@ layui.use(['table'], function () {
                 break;
         };
     });
-});
 
+})

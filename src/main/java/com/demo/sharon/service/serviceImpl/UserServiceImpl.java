@@ -1,10 +1,12 @@
 package com.demo.sharon.service.serviceImpl;
 
 import com.demo.sharon.dao.UserMapper;
+import com.demo.sharon.pojo.Result;
 import com.demo.sharon.pojo.User;
 import com.demo.sharon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -42,5 +44,31 @@ public class UserServiceImpl implements UserService {
     public Integer getCount() {
         Integer count = userMapper.getCount();
         return count;
+    }
+
+    public Result del(String id) {
+        Result result = new Result();
+        // 删除前先判断数据是否存在
+        User user = userMapper.selectByPrimaryKey(id);
+        if (user != null) {
+            int del = userMapper.deleteByPrimaryKey(id);
+            result.setMsg("Delete success.");
+        } else {
+            result.setCode(500);
+            result.setMsg("System is busy, plz try it later.....");
+        }
+        return result;
+    }
+
+    @Transactional  // 添加事务
+    // SQL事务：做某件事的时候，要么全部成功，要么全部失败
+    public Result delete(String[] ids) {
+        // iter：增强for循环
+        // fori：普通循环
+        Result result = new Result();
+        for (int i = 0; i < ids.length; i++) {
+            userMapper.deleteByPrimaryKey(ids[i]);
+        }
+        return result;
     }
 }
