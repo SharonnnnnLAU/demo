@@ -11,7 +11,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">视频标题</label>
         <div class="layui-input-block">
-            <input type="text" id="videoPath" name="videoTital" autocomplete="off" placeholder="请输入视频标题" class="layui-input">
+            <input type="text" id="videoPath" name="videoPath" autocomplete="off" placeholder="请输入视频标题" class="layui-input layui-disabled" disabled>
         </div>
         <label class="layui-form-label">视频描述</label>
         <div class="layui-input-block">
@@ -19,9 +19,12 @@
         </div>
         <label class="layui-form-label">视频上传</label>
         <div class="layui-input-block">
-            <button type="button" class="layui-btn" id="selectBtn"><i class="layui-icon"></i>选择视频</button>
-            <button type="button" class="layui-btn" id="uploadBtn"><i class="layui-icon"></i>上传视频</button>
-
+            <button type="button" class="layui-btn" id="uplVidBtn"><i class="layui-icon"></i>上传视频</button>
+            <button type="button" class="layui-btn" id="uplPicBtn"><i class="layui-icon"></i>上传封面</button>
+        </div>
+        <div class="layui-upload-list">
+            <img class="layui-upload-img" style="height: 300px" id="pic">
+            <p id="demoText"></p>
         </div>
     </div>
 </form>

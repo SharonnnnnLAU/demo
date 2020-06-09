@@ -62,6 +62,7 @@ public class VideoController {
         return result;
     }
 
+    @ResponseBody
     @RequestMapping("/upload")
     public Result upload(MultipartFile file, HttpServletRequest request) {
         Result result = videoService.upload(file, request);
