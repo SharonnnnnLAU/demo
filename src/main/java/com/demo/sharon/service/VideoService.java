@@ -3,7 +3,9 @@ package com.demo.sharon.service;
 import com.demo.sharon.pojo.Result;
 import com.demo.sharon.pojo.Video;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Service
@@ -31,4 +33,8 @@ public interface VideoService {
      * @return
      */
     Result delete(String[] ids);
+
+    Result update(String id, String field, String value);
+
+    public Result upload(MultipartFile file, HttpServletRequest request);
 }

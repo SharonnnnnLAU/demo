@@ -7,17 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37262033-84a3-4650-9a93-32c16a8a5b93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/addVideos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/service/serviceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/service/serviceImpl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/controller/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/controller/VideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/dao/VideoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/dao/VideoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/service/VideoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/service/VideoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/service/serviceImpl/VideoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/com/demo/sharon/service/serviceImpl/VideoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded/WEB-INF/classes/mapper/VideoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/VideoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/sharon/dao/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/sharon/dao/VideoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/VideoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/VideoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/sharon/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/sharon/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/sharon/service/serviceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/sharon/service/serviceImpl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/sharon/controller/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/sharon/controller/VideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/sharon/dao/VideoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/sharon/dao/VideoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/sharon/service/VideoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/sharon/service/VideoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/sharon/service/serviceImpl/VideoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/sharon/service/serviceImpl/VideoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VideoMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,80 +41,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="59" column="35" lean-forward="true" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+            <state relative-caret-position="309">
+              <caret line="228" column="34" lean-forward="true" selection-start-line="228" selection-start-column="34" selection-end-line="228" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/addVideos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/VideoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="64" column="24" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="24" />
+            <state relative-caret-position="286">
+              <caret line="13" column="62" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -113,21 +62,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/VideoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+            <state relative-caret-position="814">
+              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+              <folding>
+                <element signature="method#getAllVideos#0;class#VideoController#0" />
+                <element signature="method#delete#0;class#VideoController#0" />
+                <element signature="method#update#0;class#VideoController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/HomeController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/VideoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="704">
+              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
               <folding>
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/VideoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="682">
+              <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+              <folding>
+                <element signature="method#getAllVideos#0;class#VideoServiceImpl#0" />
+                <element signature="method#getCount#0;class#VideoServiceImpl#0" />
+                <element signature="method#del#0;class#VideoServiceImpl#0" />
+                <element signature="method#delete#0;class#VideoServiceImpl#0" />
+                <element signature="method#update#0;class#VideoServiceImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/util/UpUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="814">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/dao/VideoMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -137,20 +133,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>videoPath</find>
       <find>$</find>
       <find>videotest</find>
       <find>console</find>
       <find>video</find>
+      <find>statusTp</find>
+      <find>8080</find>
+      <find>videoPath</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -181,22 +179,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/dao/VideoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/pojo/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/layui/css/layui.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/VideoService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/VideoController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/dao/VideoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/util/UpUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/VideoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/VideoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/VideoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/addVideos.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/video.js" />
       </list>
     </option>
@@ -243,8 +243,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="247" />
+    <option name="y" value="79" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -337,6 +337,15 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sharon" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SharonLau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,15 +393,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591443977415" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591609084056" />
     <property name="last_opened_file_path" value="D:/pro/PFM_pc_ui" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -400,7 +409,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40689656" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -451,6 +460,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.35" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.35" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/demo/" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="SharonLau:war exploded">
@@ -461,6 +471,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_SharonLau_5" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1091" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -562,6 +574,15 @@
       <workItem from="1591448560597" duration="252000" />
       <workItem from="1591493053777" duration="1193000" />
       <workItem from="1591496812375" duration="2000000" />
+      <workItem from="1591507578379" duration="151000" />
+      <workItem from="1591579211753" duration="1381000" />
+      <workItem from="1591581076425" duration="138000" />
+      <workItem from="1591581252967" duration="3465000" />
+      <workItem from="1591585138240" duration="4926000" />
+      <workItem from="1591598750122" duration="2696000" />
+      <workItem from="1591601573673" duration="289000" />
+      <workItem from="1591602673449" duration="6621000" />
+      <workItem from="1591678009718" duration="280000" />
     </task>
     <task id="LOCAL-00001" summary="分页1.0">
       <created>1591241974460</created>
@@ -612,11 +633,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591366628243</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="用户行工具栏、头工具栏的删除功能&#10;video状态字更改&#10;时间格式处理">
+      <created>1591507715785</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591507715785</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87814000" />
+    <option name="totallyTimeSpent" value="107761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,7 +659,7 @@
     <frame x="67" y="-8" width="1861" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21543586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17878956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -641,20 +669,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49861187" weight="0.32848233" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80233204" weight="0.26507276" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7934481" visible="true" weight="0.32016632" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7229317" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49805662" weight="0.32952183" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.76013327" weight="0.32328483" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.759578" weight="0.32328483" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.19766796" side_tool="true" weight="0.3087318" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.84119934" weight="0.3087318" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.20655191" side_tool="true" visible="true" weight="0.32016632" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.83675736" weight="0.3087318" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4991671" weight="0.32848233" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.49972236" weight="0.32848233" />
-      <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.4991671" weight="0.32848233" />
+      <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.4991671" weight="0.32848233" />
+      <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.49861187" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -666,7 +694,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20433092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17712381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -676,20 +704,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49861187" weight="0.32848233" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80233204" weight="0.26507276" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7945586" visible="true" weight="0.36174637" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7229317" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49805662" weight="0.32952183" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.76013327" weight="0.32328483" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.759578" weight="0.32328483" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.19766796" side_tool="true" visible="true" weight="0.3087318" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.84119934" weight="0.3087318" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.20544142" side_tool="true" visible="true" weight="0.36174637" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.83675736" weight="0.3087318" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4991671" weight="0.32848233" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.49972236" weight="0.32848233" />
-      <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.4991671" weight="0.32848233" />
+      <window_info anchor="bottom" id="Spring" order="14" sideWeight="0.4991671" weight="0.32848233" />
+      <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.49861187" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -709,7 +737,8 @@
     <MESSAGE value="user data visualization" />
     <MESSAGE value="video data visualization Correction" />
     <MESSAGE value="工具栏功能编辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="工具栏功能编辑" />
+    <MESSAGE value="用户行工具栏、头工具栏的删除功能&#10;video状态字更改&#10;时间格式处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户行工具栏、头工具栏的删除功能&#10;video状态字更改&#10;时间格式处理" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
@@ -819,13 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/dao/VideoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/pojo/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
@@ -859,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="70" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/pojo/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28">
@@ -890,16 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/VideoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -917,64 +922,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/VideoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="396">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="64" column="24" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="1210">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/VideoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="242">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="e#315#316#0" expanded="true" />
@@ -983,17 +978,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/video.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/controller/VideoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="814">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="method#getAllVideos#0;class#VideoController#0" />
+            <element signature="method#delete#0;class#VideoController#0" />
+            <element signature="method#update#0;class#VideoController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/VideoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/service/serviceImpl/VideoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+          <folding>
+            <element signature="method#getAllVideos#0;class#VideoServiceImpl#0" />
+            <element signature="method#getCount#0;class#VideoServiceImpl#0" />
+            <element signature="method#del#0;class#VideoServiceImpl#0" />
+            <element signature="method#delete#0;class#VideoServiceImpl#0" />
+            <element signature="method#update#0;class#VideoServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/util/UpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/sharon/dao/VideoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/addVideos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="59" column="35" lean-forward="true" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state relative-caret-position="309">
+          <caret line="228" column="34" lean-forward="true" selection-start-line="228" selection-start-column="34" selection-end-line="228" selection-end-column="34" />
         </state>
       </provider>
     </entry>

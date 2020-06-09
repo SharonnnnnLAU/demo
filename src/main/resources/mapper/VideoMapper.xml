@@ -46,6 +46,23 @@
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+
+  <update id="update" parameterType="string">
+    update videos
+    set
+      <if test="field == 'status'">
+        status = #{value}
+      </if>
+      <if test="field == 'videoDesc'">
+        video_desc = #{value}
+      </if>
+      <if test="field == 'likeCounts'">
+        like_counts = #{value}
+      </if>
+    where id = #{id}
+  </update>
+
+
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select id, user_id, audio_id, video_desc, video_path, video_seconds, video_width,
     video_height, cover_path, like_counts, status, create_time

@@ -17,4 +17,6 @@ public interface VideoMapper {
     int updateByPrimaryKey(Video record);
 
     Integer getCount();
+
+    void update(@Param("id") String id, @Param("field")String field, @Param("value")String value);
 }

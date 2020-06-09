@@ -5,7 +5,7 @@ layui.use(['table'], function () {
     table.render({
         elem: '#user'
         , height: 600
-        , url: 'http://localhost:8080/demo/users/getAllUsers' //数据接口
+        , url: '/demo/users/getAllUsers' //数据接口
         , title: '视频表'
         , page: true //开启分页
         , toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
@@ -37,7 +37,7 @@ layui.use(['table'], function () {
                 //向服务端发送删除指令
                 $.ajax({
                     type: "GET"
-                    , url: "http://localhost:8080/demo/users/del?id=" + data.id
+                    , url: "/demo/users/del?id=" + data.id
                     , dataType: "json"   // 规定后台返回数据类型
                     , success: function (res) {
                         // 请求成功后的回调函数
@@ -85,7 +85,7 @@ layui.use(['table'], function () {
                     layer.confirm('真的删除吗', function (index) {
                         $.ajax({
                             type: "POST"
-                            , url: "http://localhost:8080/demo/users/delete"
+                            , url: "/demo/users/delete"
                             , dataType: "json"
                             , data: {
                                 "ids": arry
