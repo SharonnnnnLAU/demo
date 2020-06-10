@@ -12,10 +12,11 @@ function clickToPaly(path) {
     })
 }
 
-layui.use(['table', 'form', 'upload'], function () {
+layui.use(['table', 'form', 'upload', 'laydate'], function () {
     var table = layui.table
         , form = layui.form
         , upload = layui.upload
+        , laydate = laydate
     $ = layui.$;    // 声明jQuery
     // 执行一个table实例
     table.render({
@@ -56,7 +57,6 @@ layui.use(['table', 'form', 'upload'], function () {
                     } else {
                         return '<input type="checkbox" name="status" value="' + d.id + '" lay-skin="switch" lay-text="异常|正常" lay-filter="statusBox">'
                     }
-
                 }
             }
                 , {
@@ -122,14 +122,6 @@ layui.use(['table', 'form', 'upload'], function () {
                 })
                 layer.msg('添加');
                 break;
-            case 'update':
-                if (datas.length === 0) {
-                    layer.msg('请选择一行');
-                } else if (data.length > 1) {
-                    layer.msg('只能同时编辑一个');
-                } else {
-                    layer.alert('编辑 [id]：' + checkStatus.data[0].id);
-                }
                 break;
             case 'delete':
                 if (datas.length === 0) {
@@ -231,7 +223,6 @@ layui.use(['table', 'form', 'upload'], function () {
         }
     });
 
-
     // 实现封面上传
     var uploadInst = upload.render({
         elem: '#uplPicBtn'
@@ -258,5 +249,37 @@ layui.use(['table', 'form', 'upload'], function () {
             });
         }
     });
+
+    // 表单提交
+    form.on("submit(submit)", function (obj) {
+        console.log(obj.field)
+        $.ajax({
+            type: 'post'
+            , url: '/demo/videos/add'
+            , dataType: 'json'
+            , data: obj.field
+            , success: function (res) {
+                layer.msg(res.msg)
+            }
+        })
+    })
+
+    // 模糊查询
+    $('#search').on("click", function () {
+        table.reload('video', {
+            url: '/demo/videos/selectByLike'
+            , where: { //设定异步数据接口的额外参数，任意设
+                "value": $("#demoReload").val()
+            }
+            ,page: {
+                curr: 1 //重新从第 1 页开始
+            }
+        }); //只重载数据
+    })
+
+    // 日期范围选择
+    // laydate.render({
+    //
+    // })
 });
 

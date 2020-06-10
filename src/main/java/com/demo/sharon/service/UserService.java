@@ -18,4 +18,6 @@ public interface UserService {
     Result del(String id);
 
     Result delete(String[] ids);
+
+    Result selectNameByLike(String value, Integer page, Integer limit);
 }

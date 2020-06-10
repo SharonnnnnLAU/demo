@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="SharonLau:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/SharonLau_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/SharonLau</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>SharonLau</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -44,7 +51,13 @@
           <element id="library" level="project" name="Maven: org.attoparser:attoparser:2.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring5:3.0.9.RELEASE" />
+          <element id="library" level="project" name="Maven: it.vi:java:1.0.2" />
+          <element id="library" level="project" name="Maven: it.vi:ValidateCode:1.0" />
+          <element id="library" level="project" name="Maven: it.vi:httpclient:3.0" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/SharonLau/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="SharonLau/web/Web" />
     </root>

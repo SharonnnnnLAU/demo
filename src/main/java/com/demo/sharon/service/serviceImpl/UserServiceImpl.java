@@ -71,4 +71,15 @@ public class UserServiceImpl implements UserService {
         }
         return result;
     }
+
+    public Result selectNameByLike(String value, Integer page, Integer limit) {
+        Result result = new Result();
+        page = (page-1) * limit;
+        List<User> users = userMapper.selectNameByLike(value, page, limit);
+//        List<User> list = userMapper.selectNameByLike(value);
+//        result.setCount(list.size());
+        result.setData(users);
+        return result;
+
+    }
 }

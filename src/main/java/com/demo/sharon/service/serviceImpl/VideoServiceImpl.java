@@ -5,6 +5,8 @@ import com.demo.sharon.pojo.Result;
 import com.demo.sharon.pojo.Video;
 import com.demo.sharon.service.VideoService;
 import com.demo.sharon.util.UpUtils;
+import com.demo.sharon.util.VideoUtil;
+import it.sauronsoftware.jave.MultimediaInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,7 +14,10 @@ import org.springframework.transaction.interceptor.TransactionAspectSupport;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 import java.util.List;
+import java.util.UUID;
+
 @Service
 public class VideoServiceImpl implements VideoService {
 
@@ -93,5 +98,43 @@ public class VideoServiceImpl implements VideoService {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public Result add(Video video, HttpServletRequest request) {
+        String id = UUID.randomUUID().toString();
+        String authorID = "";
+        Result result = new Result();
+        MultimediaInfo info = VideoUtil.video(request, video.getVideoPath());
+        try {
+            long duration = info.getDuration();
+            Float videoSeconds = Float.valueOf(duration/1000);
+            Integer width = info.getVideo().getSize().getWidth();
+            Integer height = info.getVideo().getSize().getHeight();
+            // 构造函数构建video  视频路径是否需要编辑
+            Video v = new Video(id, authorID, "", videoSeconds, width, height, 0l, 0, new Date());
+            video.setVideoDesc(v.getVideoDesc());
+            String path = v.getVideoPath();
+            String videoPath = "video/" + path;
+            v.setVideoPath(videoPath);
+
+            // 调用dao层实现添加操作
+            videoMapper.insert(v);
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            result.setMsg("Error");
+            result.setCode(0);
+            return result;
+        }
+    }
+
+    public Result selectByLike(String value, Integer page, Integer limit) {
+        Result result = new Result();
+        page = (page-1) * limit;
+        List<Video> videos = videoMapper.selectByLike(value, page, limit);
+        List<Video> list = videoMapper.selectByLike(value);
+        result.setCount(list.size());
+        result.setData(videos);
+        return result;
     }
 }

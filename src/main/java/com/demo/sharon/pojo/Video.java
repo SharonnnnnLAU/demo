@@ -30,6 +30,21 @@ public class Video implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public Video() {
+    }
+
+    public Video(String id, String userId, String audioId, Float videoSeconds, Integer videoWidth, Integer videoHeight, Long likeCounts, Integer status, Date createTime) {
+        this.id = id;
+        this.userId = userId;
+        this.audioId = audioId;
+        this.videoSeconds = videoSeconds;
+        this.videoWidth = videoWidth;
+        this.videoHeight = videoHeight;
+        this.likeCounts = likeCounts;
+        this.status = status;
+        this.createTime = createTime;
+    }
+
     public String getId() {
         return id;
     }

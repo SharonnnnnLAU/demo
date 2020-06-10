@@ -202,6 +202,25 @@
       <version>3.0.9.RELEASE</version>
     </dependency>
 
+    <!--解析视频jar-->
+    <dependency>
+      <groupId>it.vi</groupId>
+      <artifactId>java</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+
+    <!--验证码-->
+    <dependency>
+    <groupId>it.vi</groupId>
+    <artifactId>ValidateCode</artifactId>
+    <version>1.0</version>
+  </dependency>
+
+    <dependency>
+      <groupId>it.vi</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>3.0</version>
+    </dependency>
 
   </dependencies>
 

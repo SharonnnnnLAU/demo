@@ -5,6 +5,27 @@
     <link rel="stylesheet" type="text/css" href="..//layui/css/layui.css">
 </head>
 <body>
+<!--添加搜索框-->
+<div class="demoTable">
+    搜索视频：
+    <div class="layui-inline">
+        <input class="layui-input" name="id" id="demoReload" autocomplete="off">
+    </div>
+    <button class="layui-btn" data-type="reload" id="search">搜索</button>
+</div>
+<!--搜索状态-->
+<div class="demoTable">
+    搜索状态：
+    <div class="layui-inline">
+        <input class="layui-input" name="id" id="seaStatus" autocomplete="off">
+    </div>
+    搜索时间范围：
+    <div class="layui-inline">
+        <input class="layui-input" name="id" id="seaTime" autocomplete="off">
+    </div>
+    <button class="layui-btn" data-type="reload" id="searchST">搜索</button>
+</div>
+
 <!-- 解析数据的表格 -->
 <table class="layui-hide" id="video" lay-filter="videotest"></table>
 

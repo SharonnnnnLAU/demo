@@ -24,8 +24,6 @@ layui.use(['table'], function () {
         ]
     });
 
-
-
     table.on('tool(videotest)', function (obj) { //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
         var data = obj.data //获得当前行数据
             , layEvent = obj.event; //获得 lay-event 对应的值
@@ -112,5 +110,20 @@ layui.use(['table'], function () {
                 break;
         };
     });
+
+
+    // 模糊查询
+    $('#search').on("click", function () {
+        table.reload('user', {
+            url: '/demo/users/selectNameByLike'
+            , where: { //设定异步数据接口的额外参数，任意设
+                "value": $("#demoReload").val()
+            }
+            ,page: {
+                curr: 1 //重新从第 1 页开始
+            }
+        }); //只重载数据
+    })
+
 
 })

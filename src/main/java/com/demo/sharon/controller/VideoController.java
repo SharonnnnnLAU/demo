@@ -68,4 +68,18 @@ public class VideoController {
         Result result = videoService.upload(file, request);
         return result;
     }
+
+    @ResponseBody
+    @RequestMapping("/add")
+    public Result add(Video video, HttpServletRequest request) {
+        Result result = videoService.add(video, request);
+        return result;
+    }
+
+    @ResponseBody
+    @RequestMapping("/selectByLike")
+    public Result selectByLike(String value, Integer page, Integer limit) {
+        Result result = videoService.selectByLike(value, page, limit);
+        return result;
+    }
 }

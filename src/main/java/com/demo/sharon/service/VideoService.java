@@ -37,4 +37,8 @@ public interface VideoService {
     Result update(String id, String field, String value);
 
     public Result upload(MultipartFile file, HttpServletRequest request);
+
+    Result add(Video video, HttpServletRequest request);
+
+    Result selectByLike(String value, Integer page, Integer limit);
 }

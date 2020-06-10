@@ -43,4 +43,11 @@ public class UserController {
             return result;
     }
 
+
+    @ResponseBody
+    @RequestMapping("/selectNameByLike")
+    public Result selectNameByLike(String value, Integer page, Integer limit) {
+        Result result = userService.selectNameByLike(value, page, limit);
+        return result;
+    }
 }
