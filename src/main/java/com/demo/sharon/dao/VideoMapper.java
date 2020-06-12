@@ -23,4 +23,6 @@ public interface VideoMapper {
     List<Video> selectByLike(@Param("value") String value, @Param("page")Integer page, @Param("limit")Integer limit);
 
     List<Video> selectByLike(@Param("value") String value);
+
+    List<Video> selectByStatusAndTime(@Param("stu") String stu, @Param("beginTime") String beginTime, @Param("endTime") String endTime);
 }

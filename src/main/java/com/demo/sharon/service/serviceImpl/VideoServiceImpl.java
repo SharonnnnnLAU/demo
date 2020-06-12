@@ -137,4 +137,27 @@ public class VideoServiceImpl implements VideoService {
         result.setData(videos);
         return result;
     }
+
+    public Result selectByStatusAndTime(String stu, String timeRange) {
+
+        //时间和状态
+        Result result = new Result();
+        if(stu!=null && stu.equals("已发布")){
+            stu = "1";
+        }else if(stu != null && stu.equals("未发布")){
+            stu = "0";
+        }
+        String beginTime="";
+        String endTime ="";
+        if(timeRange!=null&&timeRange!=""){
+            String[] split = timeRange.split("~");
+            beginTime= split[0];
+            endTime = split[1];
+        }
+        List<Video> videos = videoMapper.selectByStatusAndTime(stu,beginTime,endTime);
+        result.setCount(videos.size());
+        result.setData(videos);
+        return result;
+
+    }
 }

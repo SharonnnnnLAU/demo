@@ -98,8 +98,9 @@ layui.use(['table', 'form', 'upload', 'laydate'], function () {
                 })
                 layer.close(index)
             });
-        } else if (layEvent === 'edit') {
-            layer.msg('编辑操作');
+        } else if (layEvent === 'download') {
+            // layer.msg('下载操作');
+            window.location.href="/demo/videos/download?filename=" + data.videoPath;
         }
     })
 
@@ -275,11 +276,25 @@ layui.use(['table', 'form', 'upload', 'laydate'], function () {
                 curr: 1 //重新从第 1 页开始
             }
         }); //只重载数据
-    })
+    });
 
     // 日期范围选择
     // laydate.render({
-    //
-    // })
+    //     elem: '#searchTime'
+    //     ,range: '~' //或 range: '~' 来自定义分割字符
+    // });
+
+    $("#videoSearch").click(function () {
+        table.reload('video', {
+            url:'/demo/videos/selectByStatusAndTime',
+            where: { //设定异步数据接口的额外参数，任意设
+                "stu":$("#searchStu").val(),
+                "timeRange":$("#searchTime").val()
+            }
+            ,page: {
+                curr: 1 //重新从第 1 页开始
+            }
+        });
+    })
 });
 

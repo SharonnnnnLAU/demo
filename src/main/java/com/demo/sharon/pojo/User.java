@@ -19,6 +19,8 @@ public class User implements Serializable {
 
     private Integer receiveLikeCounts;
 
+    private String rid;
+
     private static final long serialVersionUID = 1L;
 
     public String getId() {
@@ -84,4 +86,8 @@ public class User implements Serializable {
     public void setReceiveLikeCounts(Integer receiveLikeCounts) {
         this.receiveLikeCounts = receiveLikeCounts;
     }
+
+    public void setRid(String rid) { this.rid = rid; }
+
+    public String getRid() { return rid; }
 }

@@ -59,18 +59,6 @@
     from users
   </select>
 
-  <select id="selectByLike" resultMap="BaseResultMap">
-  select id, username, password, face_image, nickname, fans_counts, follow_counts,
-  receive_like_counts
-  from users where
-  <if test="page!=null and limit!=null">
-    username like concat("%",#{value},"%") limit #{page},#{limit}
-  </if>
-  <if test="page==null and limit==null">
-    username like concat("%",#{value},"%")
-  </if>
-  </select>
-
 
   <select id="selectNameByLike" resultMap="BaseResultMap">
     select id, username, password, face_image, nickname, fans_counts, follow_counts,

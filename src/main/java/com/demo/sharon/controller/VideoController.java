@@ -3,6 +3,7 @@ package com.demo.sharon.controller;
 import com.demo.sharon.pojo.Result;
 import com.demo.sharon.pojo.Video;
 import com.demo.sharon.service.VideoService;
+import com.demo.sharon.util.DownUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
@@ -80,6 +82,24 @@ public class VideoController {
     @RequestMapping("/selectByLike")
     public Result selectByLike(String value, Integer page, Integer limit) {
         Result result = videoService.selectByLike(value, page, limit);
+        return result;
+    }
+
+    @RequestMapping("/selectByStatusAndTime")
+    @ResponseBody
+    public Result selectByStatusAndTime(String stu,String timeRange){
+        Result result = videoService.selectByStatusAndTime(stu,timeRange);
+        return result;
+    }
+
+    @RequestMapping("/download")
+//    @ResponseBody
+    public Result download(HttpServletRequest request, HttpServletResponse response, String filename){
+        String[] split = filename.split("/");
+        String s = split[split.length-1];
+        DownUtil.down(request, response, s);
+
+        Result result = new Result();
         return result;
     }
 }

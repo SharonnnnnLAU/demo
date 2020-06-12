@@ -3,6 +3,7 @@ package com.demo.sharon.service;
 import com.demo.sharon.pojo.Result;
 import com.demo.sharon.pojo.User;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 public interface UserService {
@@ -20,4 +21,6 @@ public interface UserService {
     Result delete(String[] ids);
 
     Result selectNameByLike(String value, Integer page, Integer limit);
+
+    Result login(String username, String password, String code, HttpServletRequest request);
 }

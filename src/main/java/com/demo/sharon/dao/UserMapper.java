@@ -22,6 +22,5 @@ public interface UserMapper {
 
     List<User> selectNameByLike(@Param("value") String value, @Param("page")Integer page, @Param("limit")Integer limit);
 
-//    List<User> selectNameByLike(@Param("value") String value);
 
 }
